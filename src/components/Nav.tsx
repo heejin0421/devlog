@@ -6,7 +6,7 @@ export default function Nav() {
     <nav>
       {navlinks.map((nav) => (
         <Link href={nav.link} key={nav.title}>
-          <a>{nav.title}</a>
+          {nav.title}
         </Link>
       ))}
     </nav>
