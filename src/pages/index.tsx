@@ -8,8 +8,6 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Container>
-      <span>Home</span>
-
       <RecentPosts posts={posts} />
     </Container>
   );

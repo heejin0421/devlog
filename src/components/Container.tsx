@@ -1,8 +1,10 @@
 import React from 'react';
 import metadata from '../data/metadata';
 import Head from 'next/head';
-import Nav from './Nav';
 import { Layout, Main } from './Container.style';
+import dynamic from 'next/dynamic';
+
+const Nav = dynamic(() => import('./Nav'), { ssr: false });
 
 export default function Container(props) {
   return (

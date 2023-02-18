@@ -165,3 +165,21 @@ body {
 *:focus {
   outline: 0;
 }
+
+body[data-theme='light'] {
+  --bg: #fff;
+  --text-base: #000;
+  --text-base-20: #2c3e5020;
+  --text-base-40: #2c3e5040;
+  --text-base-70: #2c3e5070;
+  --text-base-90: #2c3e5090;
+}
+
+body[data-theme='dark'] {
+  --bg: rgb(0, 0, 0);
+  --text-base: #000;
+  --text-base-20: #2c3e5020;
+  --text-base-40: #2c3e5040;
+  --text-base-70: #2c3e5070;
+  --text-base-90: #2c3e5090;
+}

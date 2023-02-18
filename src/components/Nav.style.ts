@@ -17,9 +17,24 @@ export const NavContainer = styled.div`
     padding: 0 22px;
     background-color: blue;
     height: 56px;
+    color: var(--text-base);
   }
 `;
 
 export const MenuContainer = styled.div`
   display: flex;
+`;
+
+export const Links = styled.div`
+  ul {
+    display: flex;
+
+    li {
+      margin-left: 15px;
+    }
+  }
+`;
+
+export const ThemeToggleContainer = styled.div`
+  margin-left: 12px;
 `;
