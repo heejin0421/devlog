@@ -6,7 +6,7 @@ export const NavContainer = styled.div`
   top: 0;
   width: 100%;
   height: 56px;
-  /* background-color: red; */
+  background-color: red;
 
   .container {
     max-width: 720px;
@@ -15,7 +15,7 @@ export const NavContainer = styled.div`
     align-items: center;
     margin: 0 auto;
     padding: 0 22px;
-    /* background-color: blue; */
+    background-color: blue;
     height: 56px;
     color: var(--text-base);
   }
@@ -37,9 +37,4 @@ export const Links = styled.div`
 
 export const ThemeToggleContainer = styled.div`
   margin-left: 12px;
-`;
-
-export const NavTitle = styled.div`
-  font-size: var(--font-regular);
-  font-weight: var(--weight-semi-bold);
 `;

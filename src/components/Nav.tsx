@@ -6,7 +6,6 @@ import {
   NavContainer,
   Links,
   ThemeToggleContainer,
-  NavTitle,
 } from './Nav.style';
 
 export default function Nav() {
@@ -26,7 +25,7 @@ export default function Nav() {
   return (
     <NavContainer>
       <div className='container'>
-        <NavTitle>노희진블로그</NavTitle>
+        <h1>devlog</h1>
         <MenuContainer>
           <Links>
             <ul>
