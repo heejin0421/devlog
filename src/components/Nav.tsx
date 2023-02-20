@@ -2,6 +2,7 @@ import navlinks from '@/data/navlinks';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import {
+  NavTitle,
   MenuContainer,
   NavContainer,
   Links,
@@ -25,7 +26,7 @@ export default function Nav() {
   return (
     <NavContainer>
       <div className='container'>
-        <h1>devlog</h1>
+        <NavTitle>devlog</NavTitle>
         <MenuContainer>
           <Links>
             <ul>
