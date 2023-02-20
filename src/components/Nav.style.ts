@@ -38,8 +38,3 @@ export const Links = styled.div`
 export const ThemeToggleContainer = styled.div`
   margin-left: 12px;
 `;
-
-export const NavTitle = styled.div`
-  font-size: 16px;
-  font-weight: 600;
-`;
