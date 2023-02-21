@@ -1,7 +1,9 @@
 import navlinks from '@/data/navlinks';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import {
+  NavTitle,
   MenuContainer,
   NavContainer,
   Links,
@@ -9,6 +11,9 @@ import {
 } from './Nav.style';
 
 export default function Nav() {
+  const router = useRouter();
+  console.log(router);
+
   const [themeMode, setThemeMode] = useState<string>(
     document.body.dataset.theme!
   );
@@ -25,12 +30,20 @@ export default function Nav() {
   return (
     <NavContainer>
       <div className='container'>
-        <h1>devlog</h1>
+        <Link href={'/'}>
+          <NavTitle>devlog</NavTitle>
+        </Link>
+
         <MenuContainer>
           <Links>
             <ul>
               {navlinks.map((nav) => (
-                <li key={nav.title}>
+                <li
+                  key={nav.title}
+                  data-selected={
+                    router.pathname.includes(nav.link) ? 'true' : 'false'
+                  }
+                >
                   <Link href={nav.link}>{nav.title}</Link>
                 </li>
               ))}
@@ -48,7 +61,10 @@ export default function Nav() {
                 height='18'
               >
                 <path fill='none' d='M0 0h24v24H0z' />
-                <path d='M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z' />
+                <path
+                  d='M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z'
+                  fill='rgba(255,255,255,1)'
+                />
               </svg>
             ) : (
               <svg

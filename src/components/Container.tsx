@@ -6,16 +6,16 @@ import dynamic from 'next/dynamic';
 
 const Nav = dynamic(() => import('./Nav'), { ssr: false });
 
-export default function Container(props) {
+export default function Container({ children }) {
   return (
     <Layout>
       <Head>
         <title>{metadata.title}</title>
       </Head>
-      <header>
-        <Nav />
-      </header>
-      <Main>{props.children}</Main>
+      <Nav />
+      <Main>
+        <div className='contents'>{children}</div>
+      </Main>
     </Layout>
   );
 }

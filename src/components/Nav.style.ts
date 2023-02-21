@@ -5,20 +5,25 @@ export const NavContainer = styled.div`
   position: sticky;
   top: 0;
   width: 100%;
-  height: 56px;
-  background-color: red;
+
+  backdrop-filter: blur(7px);
+  background-color: var(--header-bg);
 
   .container {
     max-width: 720px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: content-box;
     margin: 0 auto;
     padding: 0 22px;
-    background-color: blue;
     height: 56px;
-    color: var(--text-base);
   }
+`;
+
+export const NavTitle = styled.div`
+  font-size: 16px;
+  font-weight: 500;
 `;
 
 export const MenuContainer = styled.div`
@@ -31,6 +36,21 @@ export const Links = styled.div`
 
     li {
       margin-left: 15px;
+
+      &:hover a {
+        opacity: 0.8;
+        color: var(--text-base);
+        text-decoration: underline;
+      }
+
+      &:active a {
+        opacity: 1;
+      }
+
+      &[data-selected='true'] a {
+        opacity: 1;
+        color: var(--accent);
+      }
     }
   }
 `;

@@ -2,12 +2,15 @@ import Container from '@/components/Container';
 import RecentPosts from '@/components/RecentPosts';
 import { allPosts } from 'contentlayer/generated';
 import { InferGetStaticPropsType } from 'next';
+import Image from 'next/image';
+import sky from '../../public/imgs/sky.jpeg';
 
 export default function Home({
   posts,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Container>
+      <Image src={sky} alt='sky' width={720} height={300} />
       <RecentPosts posts={posts} />
     </Container>
   );

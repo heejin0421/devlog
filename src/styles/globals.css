@@ -76,7 +76,7 @@ cite {
   font-style: normal;
 }
 a {
-  color: #000;
+  color: var(--text-base);
   text-decoration: none;
   outline-offset: -1px;
   box-sizing: border-box;
@@ -168,48 +168,48 @@ body {
 
 body[data-theme='light'] {
   --bg: #fff;
+  --accent: #7297ff;
+  --shadow: #2c3e5015;
   --text-base: #000;
   --text-base-20: #2c3e5020;
   --text-base-40: #2c3e5040;
   --text-base-70: #2c3e5070;
   --text-base-90: #2c3e5090;
-
-  /* Font size */
-  --font-huge: 60px;
-  --font-large: 22px;
-  --font-medium: 18px;
-  --font-regular: 16px;
-  --font-small: 14px;
-  --font-micro: 12px;
-  --font-minor: 10px;
-
-  /* Font weight */
-  --weight-bold: 700;
-  --weight-semi-bold: 600;
-  --weight-regular: 500;
-  --weight-thin: 400;
+  --icon-color: #2c3e5070;
+  --border-color: #00000016;
+  --hover-base: #edf1f38a;
+  --header-bg: #f9fafb50;
+  --toggle-bg: #0101010a;
+  --toggle-icon: var(--text-base-70);
+  --toggle-border: #dfdfdf4d;
+  --code-block: #eff2f6;
+  --card-bg: #fff;
+  --card-border: #ececf3;
+  --mdx-border: #2c3e5040;
+  --mdx-icon-color: #2c3e5070;
+  --mdx-icon-bg: #dfdfdf4d;
 }
 
 body[data-theme='dark'] {
-  --bg: rgb(0, 0, 0);
-  --text-base: #fff;
-  --text-base-20: #2c3e5020;
-  --text-base-40: #2c3e5040;
-  --text-base-70: #2c3e5070;
-  --text-base-90: #2c3e5090;
-
-  /* Font size */
-  --font-huge: 60px;
-  --font-large: 22px;
-  --font-medium: 18px;
-  --font-regular: 16px;
-  --font-small: 14px;
-  --font-micro: 12px;
-  --font-minor: 10px;
-
-  /* Font weight */
-  --weight-bold: 700;
-  --weight-semi-bold: 600;
-  --weight-regular: 500;
-  --weight-thin: 400;
+  --bg: #292929;
+  --accent: #7297ff;
+  --shadow: #13161640;
+  --text-base: #dfdfdf;
+  --text-base-20: #dfdfdf20;
+  --text-base-40: #dfdfdf40;
+  --text-base-70: #dfdfdf70;
+  --text-base-90: #dfdfdf90;
+  --icon-color: #ffffff20;
+  --border-color: #ffffff16;
+  --hover-base: #232323;
+  --header-bg: #21212150;
+  --toggle-bg: #ffffff20;
+  --toggle-icon: var(--text-base-70);
+  --toggle-border: #eeeefb20;
+  --code-block: #232323;
+  --card-bg: #212121;
+  --card-border: var(--text-base-40);
+  --mdx-border: #dfe2e535;
+  --mdx-icon-color: #dfdfdf70;
+  --mdx-icon-bg: #eeeefb20;
 }
