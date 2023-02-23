@@ -1,11 +1,5 @@
 import styled from '@emotion/styled';
 
-export const RecentTitle = styled.div`
-  margin: 20px 0px 20px 0px;
-  font-size: 28px;
-  font-weight: 500;
-`;
-
 export const RecentPostContainer = styled.div`
   display: flex;
   flex-direction: column;
