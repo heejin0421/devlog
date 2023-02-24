@@ -1,5 +1,4 @@
 import React from 'react';
-import metadata from '../data/metadata';
 import Head from 'next/head';
 import { Layout, Main } from './Container.style';
 import dynamic from 'next/dynamic';
@@ -11,7 +10,7 @@ export default function Container({ children }) {
   return (
     <Layout>
       <Head>
-        <title>{metadata.title}</title>
+        <meta content='width=device-width, initial-scale=1' name='viewport' />
       </Head>
       <Nav />
       <Main>
