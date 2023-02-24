@@ -1,0 +1,14 @@
+import Link from 'next/link';
+import { PostContainer } from './PostCard.style';
+
+export default function PostCard({ post, slug }) {
+  return (
+    <Link href={`/blog/${slug}`}>
+      <PostContainer>
+        <h1>{post.title}</h1>
+        <p>{post.description}</p>
+        <span>{post.date}</span>
+      </PostContainer>
+    </Link>
+  );
+}
