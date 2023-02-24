@@ -4,8 +4,9 @@ export const Layout = styled.div`
   height: auto;
 `;
 export const Main = styled.main`
-  width: 100%;
+  padding: 20px 22px 50px;
   min-height: calc(100vh - 56px - 112px);
+
   .contents {
     display: block;
     width: 100%;

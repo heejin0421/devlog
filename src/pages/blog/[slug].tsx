@@ -1,27 +1,18 @@
 import Container from '@/components/Container';
+import BlogLayout from '@/layouts/blog';
 import { allPosts } from 'contentlayer/generated';
 import { InferGetStaticPropsType } from 'next';
-import { useMDXComponent } from 'next-contentlayer/hooks';
 
 export default function Post({
   post,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const MDXComponent = useMDXComponent(post.body.code);
-
   const customMeta = {
     title: post.title,
     description: post.description,
     date: new Date(post.date).toISOString(),
   };
 
-  return (
-    <Container customMeta={customMeta}>
-      <div>
-        <div>{post.title}</div>
-      </div>
-      <MDXComponent />
-    </Container>
-  );
+  return <BlogLayout post={post} />;
 }
 
 export const getStaticPaths = async () => {

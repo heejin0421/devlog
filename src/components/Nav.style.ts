@@ -22,7 +22,7 @@ export const NavContainer = styled.div`
 `;
 
 export const NavTitle = styled.div`
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 `;
 
@@ -36,11 +36,12 @@ export const Links = styled.div`
 
     li {
       margin-left: 15px;
+      font-size: 16px;
+      font-weight: 500;
 
       &:hover a {
         opacity: 0.8;
-        color: var(--text-base);
-        text-decoration: underline;
+        color: var(--accent);
       }
 
       &:active a {
@@ -57,4 +58,18 @@ export const Links = styled.div`
 
 export const ThemeToggleContainer = styled.div`
   margin-left: 12px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    transition: all 0.2s ease;
+  }
+
+  &:hover {
+    svg {
+      fill: #ff9a00;
+    }
+  }
 `;
