@@ -82,3 +82,29 @@ https://github.com/orioncactus/pretendard
     url('./fonts/woff2/Pretendard-Thin.woff2') format('woff2'),
     url('./fonts/woff/Pretendard-Thin.woff') format('woff');
 }
+
+/* FiraMono (Code) */
+
+@font-face {
+  font-family: 'FiraMono';
+  font-weight: 700;
+  font-display: swap;
+  src: local('FiraMono Bold'),
+    url('./fonts/FiraMono-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraMono';
+  font-weight: 500;
+  font-display: swap;
+  src: local('FiraMono Medium'),
+    url('./fonts/FiraMono-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraMono';
+  font-weight: 400;
+  font-display: swap;
+  src: local('FiraMono Regular'),
+    url('./fonts/FiraMono-Regular.ttf') format('truetype');
+}
