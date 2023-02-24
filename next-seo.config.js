@@ -12,7 +12,7 @@ const SEO = {
     site_name: metadata.meta.title,
     images: [
       {
-        url: `${metadata.meta.url}/static/og-graph.png`,
+        url: `${metadata.meta.url}/profile.jpeg`,
         width: 850,
         height: 650,
         alt: `heejin.dev`,
