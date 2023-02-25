@@ -1,3 +1,4 @@
+import mq from '@/styles/utils/mq';
 import styled from '@emotion/styled';
 
 export const RecentProjectContainer = styled.div`
@@ -10,14 +11,23 @@ export const RecentProjectContainer = styled.div`
     box-sizing: border-box;
 
     padding: 12px 8px;
+
+    ${mq({
+      width: ['33.3333%', '33.3333%', '50%', '100%'],
+      padding: ['12px 8px', '12px 8px', '8px', '12px 8px'],
+    })}
   }
   flex-direction: row;
+
+  ${mq({
+    flexDirection: ['row', 'row', 'row', 'column'],
+  })}
 `;
 
 export const ProjectCard = styled.div`
-  position: relative;
-  width: 250px;
-  height: 280px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 
   border-radius: 0.6em;
   background-color: var(--card-bg);
@@ -30,11 +40,20 @@ export const ProjectCard = styled.div`
 
 export const ProjectCardImg = styled.div`
   position: relative;
-  padding-bottom: 64%;
+
+  &:before {
+    content: '';
+    position: relative;
+    display: block;
+    padding-bottom: 64%;
+
+    ${mq({
+      paddingBottom: ['64%', '64%', '64%'],
+    })}
+  }
 
   img {
     position: absolute;
-    height: 100%;
   }
 `;
 

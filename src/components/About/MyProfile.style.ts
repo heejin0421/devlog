@@ -1,10 +1,15 @@
+import mq from '@/styles/utils/mq';
 import styled from '@emotion/styled';
 
 export const MyProfileContainer = styled.div`
   display: flex;
   flex-direction: row;
-
   gap: 25px;
+
+  ${mq({
+    flexDirection: ['row', 'row', 'column'],
+    alignItems: ['', '', 'center'],
+  })}
 `;
 
 export const ProfileImage = styled.div`

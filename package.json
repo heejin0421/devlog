@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.10.6",
     "@next/font": "13.1.6",
     "contentlayer": "^0.3.0",
+    "facepaint": "^1.2.1",
     "next": "13.1.6",
     "next-contentlayer": "^0.3.0",
     "next-seo": "^5.15.0",

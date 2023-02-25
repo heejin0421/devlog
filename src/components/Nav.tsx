@@ -31,7 +31,7 @@ export default function Nav() {
     <NavContainer>
       <div className='container'>
         <Link href={'/'}>
-          <NavTitle>devlog</NavTitle>
+          <NavTitle>Devlog</NavTitle>
         </Link>
 
         <MenuContainer>

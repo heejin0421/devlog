@@ -3,6 +3,7 @@ import Link from 'next/link';
 import {
   ProjectCard,
   ProjectCardImg,
+  ProjectCardsContainer,
   ProjectDes,
   ProjectInfo,
   ProjectTitle,
@@ -10,7 +11,7 @@ import {
 
 export default function ProjectCards({ projects }) {
   return (
-    <div>
+    <ProjectCardsContainer>
       {projects.map((project) => (
         <Link
           href={project.url}
@@ -34,6 +35,6 @@ export default function ProjectCards({ projects }) {
           </ProjectCard>
         </Link>
       ))}
-    </div>
+    </ProjectCardsContainer>
   );
 }

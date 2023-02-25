@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import mq from '@/styles/utils/mq';
 
 export const MainImg = styled.div`
   width: 720px;
@@ -8,4 +9,8 @@ export const MainImg = styled.div`
   overflow: hidden;
 
   /* margin-top: 10px; */
+  ${mq({
+    width: ['100%', '100%', '100%'],
+    height: ['300px', '300px', '300px'],
+  })}
 `;

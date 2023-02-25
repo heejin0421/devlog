@@ -5,6 +5,7 @@ export const NavContainer = styled.div`
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 100;
 
   backdrop-filter: blur(7px);
   background-color: var(--header-bg);
@@ -65,6 +66,7 @@ export const ThemeToggleContainer = styled.div`
     width: 16px;
     height: 16px;
     transition: all 0.2s ease;
+    fill: var(--text-base);
   }
 
   &:hover {

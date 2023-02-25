@@ -1,3 +1,4 @@
+import convertDateUs from '@/lib/convertDateUs';
 import {
   MDXPostContainer,
   MDXPostContent,
@@ -9,7 +10,7 @@ export default function MDXPost({ title, date, children }) {
   return (
     <MDXPostContainer>
       <MDXPostHead>
-        <p>{date}</p>
+        <p>{convertDateUs(date)}</p>
         <h1>{title}</h1>
       </MDXPostHead>
 

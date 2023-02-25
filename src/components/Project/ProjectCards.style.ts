@@ -1,10 +1,24 @@
+import mq from '@/styles/utils/mq';
 import styled from '@emotion/styled';
+
+export const ProjectCardsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+  a {
+    display: block;
+    width: 33.3333%;
+    padding: 12px 8px;
+
+    ${mq({
+      width: ['33.3333%', '33.3333%', '50%', '100%'],
+      padding: ['12px 8px', '12px 8px', '8px', '12px 8px'],
+    })}
+  }
+`;
 
 export const ProjectCard = styled.div`
   position: relative;
-  width: 250px;
-  height: 280px;
-
   border-radius: 0.6em;
   background-color: var(--card-bg);
   box-shadow: 0px 6px 14px var(--shadow);
