@@ -4,7 +4,6 @@ import styled from '@emotion/styled';
 export const MyProfileContainer = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 25px;
 
   ${mq({
     flexDirection: ['row', 'row', 'column'],
@@ -31,6 +30,8 @@ export const ProfileTextContainer = styled.div`
   width: 400px;
 
   gap: 15px;
+
+  padding: 24px;
 
   h1 {
     font-size: 18px;
