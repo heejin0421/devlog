@@ -25,7 +25,7 @@ export default function Blog({
     <Container>
       <NextSeo
         title='blog'
-        description='블로그 메뉴입니다.'
+        description='블로그 메뉴입니다!'
         canonical={`${metadata.meta.url}/blog`}
         openGraph={{ url: `${metadata.meta.url}/blog` }}
       />
