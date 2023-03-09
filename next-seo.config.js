@@ -1,7 +1,7 @@
 import metadata from '@/data/metadata';
 
 const SEO = {
-  titleTemplate: '노희진 기술 블로그 | %s',
+  titleTemplate: '노희진 기술 블로그 - %s',
   defaultTitle: metadata.meta.title,
   description: metadata.meta.description,
   canonical: metadata.meta.url,
