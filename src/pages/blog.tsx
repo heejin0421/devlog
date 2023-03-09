@@ -2,8 +2,10 @@ import Container from '@/components/Container';
 import PostCard from '@/components/Post/PostCard';
 import PostSearch from '@/components/Post/PostSearch';
 import Title from '@/components/Title';
+import metadata from '@/data/metadata';
 import { allPosts } from 'contentlayer/generated';
 import { InferGetStaticPropsType } from 'next';
+import { NextSeo } from 'next-seo';
 import { useState } from 'react';
 
 export default function Blog({
@@ -21,6 +23,12 @@ export default function Blog({
 
   return (
     <Container>
+      <NextSeo
+        title='blog'
+        description='블로그 메뉴입니다.'
+        canonical={`${metadata.meta.url}/blog`}
+        openGraph={{ url: `${metadata.meta.url}/blog` }}
+      />
       <Title
         title='Blog'
         description='공유하고 싶거나 배워서 익힌 기술들을 정리합니다.'
